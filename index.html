@@ -86,6 +86,7 @@
                  
                 cvgx.save();
                 cvgx.translate(sw,sh); //cvgx.translate(sw/2,sh/2);
+                cvgx.drawImage(lst1.image,0,0,lst1.width*factor,lst1.height*factor);
                 cvgx.drawImage(mojiban.image,-mojiban.cx*factor,-mojiban.cy*factor,
                     mojiban.width*factor,mojiban.height*factor);
                 cvgx.restore();
