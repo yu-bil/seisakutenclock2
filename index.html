@@ -16,18 +16,13 @@
             var basewidth = 640, baseheight = 480; // 基本画像（文字盤）サイズ
             // 背景文字盤、時針、分針、秒針
             var array = ["./clock640-480-400-FULL-GOLD.png","./hneedle-skelton.png",
-                            "./mneedle-skelton.png","./sneedle-skelton.png" ];
+                            "./mneedle-skelton.png","./sneedle-skelton.png" ,"./1_human.png"];
             var img = [];
             for (i=0;i<array.length;i++) {
                 img[i] = new Image();
                 img[i].src = array[i];
             }
-            var array_lst =["./1_human.png"]
-            for (i=0;i<array_lst.length;i++){
-                img_lst[i] = new Image();
-                img_lst[i].src = array_lst[i];
-            
-            }
+
 //             // pixi.jsのアプリケーションを作成
 //           const app = new PIXI.Application({
 //               width: window.innerWidth,
@@ -44,7 +39,7 @@
             var hndl = {"width":120.5, "height":25.5, "cx":35.5, "cy":13, "image":img[1]}; //
             var mndl = {"width":125.5, "height":20.5, "cx":35.5, "cy":10.5, "image":img[2]};
             var sndl = {"width":130.5, "height":15.5, "cx":35.5, "cy":8, "image":img[3]};
-            var lst1 = {"width":sw, "height":sh/5, "cx":0, "cy":0, "image":img_lst[0]};
+            var lst1 = {"width":sw, "height":sh/5, "cx":0, "cy":0, "image":img[4]};
         
 //             var mojiban = {"width":640, "height":480, "cx":321, "cy":241, "image":img[0]}; //"cx":321, "cy":241
 //             var hndl = {"width":241, "height":51, "cx":71, "cy":26, "image":img[1]}; //
