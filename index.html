@@ -89,7 +89,7 @@
             }
             function needleDraw(needle,angle) {
                 cvgx.save();
-                cvgx.translate(sw-350,sh/2+400);
+                cvgx.translate(sw-350,sh+400);
                 cvgx.rotate(angle);
                 cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor,
                     needle.width*factor, needle.height*factor);
