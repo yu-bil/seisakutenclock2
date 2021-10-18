@@ -78,7 +78,7 @@
                 cvgx.clearRect(0,0,sw,sh);
                  
                 cvgx.save();
-                cvgx.translate(sw-350,sh+400); //cvgx.translate(sw/2,sh/2);
+                cvgx.translate(sw-100,sh+400); //cvgx.translate(sw/2,sh/2);
                 cvgx.drawImage(mojiban.image,-mojiban.cx*factor,-mojiban.cy*factor,
                     mojiban.width*factor,mojiban.height*factor);
                 cvgx.restore();
@@ -89,7 +89,7 @@
             }
             function needleDraw(needle,angle) {
                 cvgx.save();
-                cvgx.translate(sw-350,sh+400);
+                cvgx.translate(sw-100,sh+400);
                 cvgx.rotate(angle);
                 cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor,
                     needle.width*factor, needle.height*factor);
