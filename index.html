@@ -12,7 +12,7 @@
 -->
     <script>
             var sw = window.innerWidth; // 表示画面サイズ　640
-            var sh = 3*window.innerHeight; //480
+            var sh = window.innerHeight; //480
             var basewidth = 640, baseheight = 480; // 基本画像（文字盤）サイズ
             // 背景文字盤、時針、分針、秒針
             var array = ["./clock640-480-400-FULL-GOLD.png","./hneedle-skelton.png",
@@ -44,7 +44,7 @@
             function init() {
                 cv = document.getElementById("clock");
                 cv.width = sw;
-                cv.height = sh;
+                cv.height = 3*sh;
                 cv.style.backgroundColor = "green"
                 cvgx = cv.getContext("2d");
                 setInterval(drawClock,30);
