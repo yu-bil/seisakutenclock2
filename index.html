@@ -97,10 +97,20 @@
                 cvgx.restore();
                 //document.write(-mojiban.cx*factor,-mojiban.cy*factor);
                 //print(-mojiban.cx*factor,-mojiban.cy*factor)
-                 
                 needleDraw(hndl,ahour);
                 needleDraw(mndl,aminute);
                 needleDraw(sndl,asecond);
+                
+                cvgx.save();
+                cvgx.translate(sw-160,2*(sh/10+50)); //cvgx.translate(sw/2,sh/2)
+                cvgx.drawImage(mojiban.image,-mojiban.cx*factor,-mojiban.cy*factor,
+                    mojiban.width*factor,mojiban.height*factor);
+                cvgx.restore();
+                //document.write(-mojiban.cx*factor,-mojiban.cy*factor);
+                //print(-mojiban.cx*factor,-mojiban.cy*factor)
+                needleDraw_ax(hndl,ahour,2);
+                needleDraw_ax(mndl,aminute,2);
+                needleDraw_ax(sndl,asecond,2);
             }
             function needleDraw(needle,angle) {
                 cvgx.save();
@@ -110,9 +120,9 @@
                     needle.width*factor, needle.height*factor);
                 cvgx.restore();
             }  
-            function needleDraw_axay(needle,angle,ax,ay) {
+            function needleDraw_ax(needle,angle,ax) {
                     cvgx.save();
-                    cvgx.translate(sw-ax,sh-ay);
+                    cvgx.translate(sw-160,ax*(sh/10+50));
                     cvgx.rotate(angle);
                     cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor,
                         needle.width*factor, needle.height*factor);
