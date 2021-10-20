@@ -171,7 +171,7 @@
             function needleMojiban_ax(mojiban,ax) {
                     cvgx.save();
                     cvgx.translate(sw-160,0); //cvgx.translate(sw/2,sh/2). sw-160,ax*(sh/10+50) sw-160,ax*(sh/10+50)
-                    cvgx.drawImage(mojiban.image,-mojiban.cx*factor,-mojiban.cy*factor+ax*(sh/10+50),
+                    cvgx.drawImage(mojiban.image,-mojiban.cx*factor,-mojiban.cy*factor+ax*(sh/5-100),
                         mojiban.width*factor,mojiban.height*factor);
                     cvgx.restore();
             }
