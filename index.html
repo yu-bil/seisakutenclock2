@@ -79,7 +79,7 @@
 //              var asecond = -Math.PI/2 + Math.PI/30*second;
                 
                 cvgx.clearRect(0,0,sw,sh);
-                cvgx.drawImage(lst1.image,-50,sh/2-lst1.height*factor/2,lst1.width*factor,lst1.height*factor);
+                cvgx.drawImage(lst1.image,-50,0,lst1.width*factor,lst1.height*factor);
                 //cvgx.drawImage(lst1.image,-50,-100+lst1.height*factor,lst1.width*factor,lst1.height*factor);
                 cvgx.drawImage(lst1.image,-50,-200+2*lst1.height*factor,lst1.width*factor,lst1.height*factor);
                 cvgx.drawImage(lst1.image,-50,-300+3*lst1.height*factor,lst1.width*factor,lst1.height*factor);
@@ -93,7 +93,7 @@
                 cvgx.drawImage(lst1.image,-50,-1100+11*lst1.height*factor,lst1.width*factor,lst1.height*factor);
                 cvgx.save();
                 cvgx.translate(sw-160,0); //cvgx.translate(sw/2,sh/2)sh/10+50
-                cvgx.drawImage(mojiban.image,-mojiban.cx*factor,mojiban.cy*factor/2,
+                cvgx.drawImage(mojiban.image,-mojiban.cx*factor,sh/2-lst1.height*factor/2,
                     mojiban.width*factor,mojiban.height*factor);//-mojiban.cy*factor
                 cvgx.restore();
                 //document.write(-mojiban.cx*factor,-mojiban.cy*factor);
