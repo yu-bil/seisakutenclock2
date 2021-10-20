@@ -156,13 +156,13 @@
                 cvgx.save();
                 cvgx.translate(sw-160,0);//sw-160,sh -10
                 cvgx.rotate(angle);
-                cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor+sh/5-100,
+                cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor,
                     needle.width*factor, needle.height*factor);//+sh/5-100
                 cvgx.restore();
             }  
             function needleDraw_ax(needle,angle,ax) {
                     cvgx.save();
-                    cvgx.translate(sw-160,0);//sw-160,ax*(sh/10+50)
+                    cvgx.translate(sw-160,ax*(sh/10+50));//sw-160,ax*(sh/10+50)
                     cvgx.rotate(angle);
                     cvgx.drawImage(needle.image,-needle.cx*factor,-needle.cy*factor,
                         needle.width*factor, needle.height*factor);
